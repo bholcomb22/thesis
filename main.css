@@ -1,15 +1,15 @@
 html, body {
-    margin: 0;
-    height: 100%;
-}
-
-#background {
     background-image: url(img/back.jpg.jpg);
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: color;
     background-size: cover;
     margin: 0;
     height: 100%;
+}
+
+#background {
+    
+    
 }
 
 @font-face {
@@ -85,7 +85,7 @@ html, body {
     font-family: roboto-regular;
     width: 250px;
     height: 350px;
-    /* background-color: rgba(0,0,0,.5); */
+    background-color: rgba(255,255,255,.2);
     z-index: 1;
 }
 
@@ -196,15 +196,17 @@ footer {
     bottom: 0;
     /* background-color: rgba(0, 0, 0, 0.7); */
     overflow: hidden;
+    height: 100%;
 }
 
 .footer-container {
+    position: relative;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     height: 4em;
-    
     margin-bottom: 0;
+    bottom: 0;
 }
 .copywrite {
     color: lightgray;
