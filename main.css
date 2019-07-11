@@ -1,0 +1,259 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#background {
+    background-image: url(img/back.jpg.jpg);
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(text/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(text/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(text/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-con-regular;
+    src: url(text/RobotoCondensed-Regular.ttf);
+}
+
+
+.links > li{
+    display: inline-block;
+} 
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 13fr 1fr;
+    height: 3em;
+    font-family: roboto-medium;
+    padding: 1em;
+    text-align: center;
+    /* background-color: rgba(0,0,0,.7) */
+}
+
+.company-name {
+    /* position: relative; */
+    width: 50px;
+    font-size: 2.5rem;
+    color: white;
+    padding-left:50px;
+    /* margin-right: auto;  */
+}
+.links > li {
+    margin: 0 2em;
+}
+.links > li a {
+    text-decoration: none;
+    color: white;
+}
+
+.links > li a:hover {
+    transition: color 1s;
+    color: yellow;
+}
+
+.hamburger:hover {
+    transition: color 1s;
+    background-color: yellow;
+}
+.hamburger {
+    position: relative;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.menu-list {
+    position: absolute;
+    padding-left: 0;
+    text-align: center;
+    right: 5em;
+    font-family: roboto-regular;
+    width: 250px;
+    height: 350px;
+    /* background-color: rgba(0,0,0,.5); */
+    z-index: 1;
+}
+
+.menu-list > li {
+    list-style: none;
+    height: 2.5em;
+    font-family: roboto-regular;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.menu-list > li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.menu-list li a {
+    text-decoration: none;
+    color: white;
+}
+/* MAIN CONTENT SECTION */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+
+
+#main-content {
+    padding: 5em 0 10em 0;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+.left-main {
+    padding: 0 10% 0 25%;
+    box-sizing: border-box;
+}
+
+.left-main > h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.left-main > h3 {
+    color: gray;
+    font-family: roboto-thin;
+}
+
+.right-main {
+    text-align: center;
+    /* font-family: roboto-thin; */
+}
+
+.right-main p {
+    color: white;
+    font-family: roboto-regular;
+    padding-top: 40px;
+}
+
+ .signup-input, .sign-btn {
+     background-color: rgba(255, 255, 255, 0.1);
+     border: none;
+     box-sizing: border-box;
+     height: 3.5rem;
+     width: 25rem;
+     padding: 0 1em;
+     font-size: 17px;
+ }
+
+ .signup-input {
+     border: 1px solid rgba(128, 128, 128, 0.37);
+     color: lightgray;
+ }
+ .sign-up {
+     margin-bottom: 1.8em;
+ }
+
+ .sign-up > input:nth-child(1){
+     border-top-right-radius: 2px;
+     border-top-left-radius: 2px;
+ }
+
+ .signup-input:focus {
+     color:white;
+ }
+
+
+.sign-btn {
+    background-color: #2C99ED;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    color: white;
+}
+
+.condition {
+    color: gray;
+    font-family: roboto-con-regular;
+    font-size: 13px;
+
+}
+.white-small {
+    color: white;
+    font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    overflow: hidden;
+}
+
+.footer-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    height: 4em;
+    
+    margin-bottom: 0;
+}
+.copywrite {
+    color: lightgray;
+    font-family: roboto-ruglar;
+    font-size: 14px;
+    padding-left: 2em;
+}
+.footer-list {
+    padding-left: 6em;
+}
+
+.footer-list > li {
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.footer-list li a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+@media (max-width:1110px) {
+    .footer-list {
+        display: none;
+    }
+    .links > li {
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 968px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 766px) {
+    .links {
+        display: none;
+    }
+    .label {
+        position: relative;
+        left: 70%;
+    }
+}
+
+@media (max-width: 544px) {
+    .left-main {
+        padding: 10%;
+    }
+}
